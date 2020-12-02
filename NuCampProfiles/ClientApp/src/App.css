@@ -1,0 +1,83 @@
+.App {
+    text-align: center;
+    font-family: Blippo, fantasy;
+}
+
+.App-logo {
+    height: 20vmin;
+    pointer-events: none;
+    margin-bottom: 30px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #353533;
+    padding-top: 2%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #0097DC;
+}
+
+.App-Body {
+    margin-top: 25px;
+}
+
+.App-Body select{
+    width: 300px;
+    margin-bottom: 25px;
+    margin: auto auto 10px auto;
+}
+
+.App-link {
+    color: #A93AA5;
+    cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.App .cardList {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.App .card {
+    width: 50%;
+    min-width: 350px;
+    border-style: outset;
+    margin-bottom: 25px;
+}
+
+.card .btn {
+    background-color: #A93AA5;
+}
+
+.card iframe {
+    pointer-events: none;
+    height: 300px;
+}
+
+.card html {
+    overflow: hidden;
+}
+
+@media (max-width: 1416px) {
+    .App .card {
+        width: 100%;
+    }
+}

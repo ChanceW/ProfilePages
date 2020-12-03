@@ -21,7 +21,7 @@ function getCards(selectedClass) {
 
 
 function App() {
-    const classes = AppConfig.classes.map(c => { return <option>{c.name}</option> });
+    const classes = AppConfig.classes.map((c, idx) => { return <option key={idx}>{c.name}</option> });
     const [selectedClass, setSelected] = useState(AppConfig.classes[0].name);
     return (
         <div className="App">

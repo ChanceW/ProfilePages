@@ -57,10 +57,11 @@
 }
 
 .App .card {
-    width: 50%;
+    width: 45%;
     min-width: 350px;
     border-style: outset;
     margin-bottom: 25px;
+    margin-right: 5%;
 }
 
 .card .btn {
@@ -76,7 +77,7 @@
     overflow: hidden;
 }
 
-@media (max-width: 1416px) {
+@media (max-width: 1575px) {
     .App .card {
         width: 100%;
     }

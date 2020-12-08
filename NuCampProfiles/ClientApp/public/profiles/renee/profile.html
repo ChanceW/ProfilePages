@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renee's Profile</title>
+    <style>
+        table, th, td {
+          border: 1px solid rgb(8, 53, 8);
+          color: rgb(8, 53, 8);
+          border-collapse: collapse;
+          margin: auto;
+        }
+        h1 {
+            color: white;
+            background-color: rgb(8, 53, 8);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            border-top:rgb(8, 53, 8) solid 20px;
+            border-bottom:rgb(8, 53, 8) solid 20px;
+        }
+        body{
+            background-image: url("images/LeafPattern.jpg");
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        h2 {
+            color:white;
+            background-color:rgb(8, 53, 8);
+            text-align: center;
+            border-top:rgb(8, 53, 8) solid 20px;
+            border-bottom:rgb(8, 53, 8) solid 20px;
+        }
+        nav, nav a{
+            color: rgb(8, 53, 8);
+            background-color:white;
+            border-top: white solid 10px;
+          border-bottom: white solid 10px;
+          text-align: center;
+        }
+
+        img{
+            border: white solid 8px;
+        }
+
+        #mypic{
+            border: white solid 15px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        #morepics{
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        tr:nth-child(even){
+        background-color: rgb(215, 235, 215);
+        height: 50px;
+        }
+        tr:nth-child(odd){
+        background-color: white;
+        height: 50px;
+        }
+
+        table{
+            width: 450px;
+            text-align: center;
+        }
+
+      #aboutme, #interestslist, #funfacts, #guesssec, #contactme{
+          background-color: white;
+          width: 600px;
+          padding-top: 15px;
+          padding-bottom: 15px;
+          border:rgb(8, 53, 8) solid 8px;
+          margin: auto;
+      }
+
+       button{
+           font-size: large;
+           border: rgb(146, 9, 9) solid 4px;
+           border-radius: 10px;
+           color:rgb(146, 9, 9);
+       }   
+    
+      #message{
+          width: 200px;
+          height: 100px;
+      }
+
+      
+        </style>
+</head>
+<body>
+    <h1>Renee Markiewicz</h1>
+    <section>
+        <img id="mypic" src="images/me.jpg"alt="Photo of Renee" width="250"/>
+        <div id="mp3"><audio src="mp3/MusicFile.mp3" controls> Your browser does not support HTML5 audio. Here is <a href="mp3/MusicFile.mp3">a link to the audio</a> instead. </audio></div>
+        <nav>
+            <h3>
+            <a href="#about">About Me</a> | <a href="#interests">Interests</a> | 
+             <a href="#facts">Fun Facts</a> | <a href="#schedule">Weekday Schedule</a> |
+             <a href="#guess">Guessing Games</a> | <a href="#contact">Contact Me</a>
+            </h3>
+          </nav>
+        <h2 id="about">About Me</h2>
+        <ul id="aboutme">
+            <li>Born in Monroeville, PA.</li>
+            <li>Currently resides in Pittsburgh, PA. </li>
+            <li>Graduated from Penn State with a B.A. in English.</li>
+            <li>Works as an office manager at a small label manufacturer.</li>
+            <li>Lives with my husband and our three cats.</li>
+        </ul>
+            <img id="morepics" src="images/cats+wedding.png" height="160"/>
+        <h2 id="interests">Interests</h2>
+        <ul id="interestslist">
+            <li>Reading</li>
+            <li>Travelling</li>
+            <li><a href="https://www.pbt.org/pbt-school/community-division/community-division-classes/" target="_blank">Ballet</a></li>
+            <li>Yoga</li>
+            <li>Cycling</li>
+        </ul>
+        <h2 id="facts">Fun Facts</h2>
+        <ul id="funfacts">
+            <li>Worked as an extra in two movies: 
+                <a href="https://www.imdb.com/title/tt1464540/"target="_blank">I Am Number Four</a> 
+                and <a href="https://www.imdb.com/title/tt1659337/?ref_=nv_sr_srsg_0"target="_blank">The Perks of Being a Wallflower.</a></li>
+            <li>Marched in the Macy's Thanksgiving Day Parade in 2009 as a majorette.</li>
+            <li>Has been <a href="https://www.mindbodygreen.com/articles/11-great-reasons-to-eat-less-meat-even-if-youre-not-ready-to-go-vegan"target="_blank">vegetarian</a> since age 18.</li>
+        </ul>
+        <h2 id="schedule">Weekday Schedule</h2>
+        <table>
+            <tr>
+              <th>Time</th>
+              <th>Activity</th>
+            </tr>
+            <tr>
+                <td>5:15am - 6:15am</td>
+                <td>Exercise</td>
+              </tr>
+            <tr>
+              <td>8:00am - 4:30pm</td>
+              <td>Work</td>
+            </tr>
+            <tr>
+                <td>5:00pm - 6:00pm</td>
+                <td>Dinner</td>
+              </tr>
+              <tr>
+                <td>6:00pm - 8:00pm</td>
+                <td>Learn & Practice Coding</td>
+              </tr>
+          </table>
+          
+          <h2 id="guess">Guessing Games</h2>
+          <section id="guesssec">
+            <button onclick="guessColor()">Game Number 1</button>
+            <button onclick="twoTruths()">Game Number 2</button>
+            <button onclick="catGame()">Game Number 3</button>
+          </section>
+    </section>
+    <h2 id="contact">Contact Me</h2>
+        <form id="contactme" action="mailto:renee.p.markiewicz@gmail.com" method="post">
+            <label for="name">Your Name:</label>
+            <input id="name" type="text" name="contactme"/><br>
+            <label for="email">Your Email:</label>
+            <input id="email" type="text" name="contactme"/><br>
+            <label for="message">Your Message:</label>
+            <input id="message" type="text" name="contactme"/><br>
+            <input type="submit" value="Send Your Message!"/>
+        </form>
+    <script>
+        function guessColor(){
+                let colorGuess = prompt('Can you guess my favorite color?');
+                colorGuess = colorGuess.toLowerCase();
+                if (colorGuess !== 'green'){alert('Incorrect! Please play again!')}
+                else{alert('Correct! My favorite color is green! How did you guess?!')};
+        }
+
+        function twoTruths(){
+            let truthGuess = prompt('Here are two truths and a lie. Can you guess the lie?\n\n(1) I strongly dislike potatoes, even french fries.\n\n(2) In college, I studied abroad in Paris.\n\n(3) I have a pet betta fish.\n\nInstructions: enter only the number as your guess.');
+            if (truthGuess === '2'){alert('Correct! I have never been to Paris.')}
+            else if ((truthGuess === '1') || (truthGuess === '3')){alert('No, that one was true! Please play again.')}
+            else{alert('Hmm I do not understand that guess. Please try again with just the number 1, 2, or 3 for your guess.')};
+        }
+
+        function catGame(){
+            let catGuess = prompt('Take a guess: my three cats are named after...?\n\n(A) Flowers, (B) Cookies, or (C) The Office Characters\n\nInstructions: enter only the capital letter of your guess.');
+            if ((catGuess === 'B') || (catGuess === 'C')){alert('No. Please play again!')}
+            else if (catGuess === 'A'){alert('Correct, we named our cats after flowers!\n\nTheir names are Lily, Violet, and Thistle.')}
+            else{alert('Hmm I do not understand that guess. Please try again with just the capital letter A, B, or C for your guess.')}
+        }
+
+    </script>
+</body>
+</html>

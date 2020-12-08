@@ -56,12 +56,17 @@
     width: 50%;
 }
 
+.App .classSelect {
+    border: 2px solid rgba(0,0,0,.125);
+}
+
 .App .card {
     width: 45%;
     min-width: 350px;
     border-style: outset;
     margin-bottom: 25px;
     margin-right: 5%;
+    border: 2px solid rgba(0,0,0,.125);
 }
 
 .card .btn {
@@ -77,7 +82,7 @@
 }
 
 .card .snapshot {
-    width: 300px;
+    width: 80%;
 }
 
 .card canvas {

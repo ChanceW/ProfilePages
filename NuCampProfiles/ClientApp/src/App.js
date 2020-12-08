@@ -35,7 +35,7 @@ function App() {
                 <p>Congratulations HTML, CSS and JavaScript Graduates!</p>
             </header>
             <div className="App-Body">
-                <Input type="select" onChange={(e) => { setSelected(e.target.value) }}>{classes}</Input>
+                <Input className="classSelect" type="select" onChange={(e) => { setSelected(e.target.value) }}>{classes}</Input>
                 <div className="cardList row">
                     {getCards(selectedClass)}
                 </div>

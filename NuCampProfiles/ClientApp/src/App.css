@@ -1,3 +1,9 @@
+:root {
+    --nucamp_Gray: #353533;
+    --nucamp_Blue: #0097DC;
+    --nucamp_Puple: #A93AA5;
+}
+
 .App {
     text-align: center;
     font-family: Blippo, fantasy;
@@ -16,13 +22,13 @@
 }
 
 .App-header {
-    background-color: #353533;
+    background-color: var(--nucamp_Gray);
     padding-top: 2%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color: #0097DC;
+    color: var(--nucamp_Blue);
 }
 
 .App-Body {
@@ -36,7 +42,7 @@
 }
 
 .App-link {
-    color: #A93AA5;
+    color: var(--nucamp_Puple);
     cursor: pointer;
 }
 
@@ -70,12 +76,12 @@
 }
 
 .card .btn {
-    background-color: #A93AA5;
+    background-color: var(--nucamp_Puple);
     margin-top: 15px;
 }
 
 .card .trophy {
-    width: 50px;
+    width: 10%;
     position: absolute;
     top: 5px;
     left: 5px;

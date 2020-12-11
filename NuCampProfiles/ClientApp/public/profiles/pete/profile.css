@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display&family=Permanent+Marker&display=swap');
+body, html {
+    margin: 0px;
+    background-image: url("../MyProfile/images/sounds-of-detroit-10-essential-tracks-from-the-birthplace-of-techno.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Tahoma, Arial, sans-serif;
+    padding: 0px;
+    width: 100%;
+}
+
+h1 {
+    background: rgba(255, 165, 0, 0.932);
+    font-family: 'big shoulders stencil display', sans-serif;
+    margin: 0 0 10px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    font-size: 3em;
+    color: blue;   
+}
+
+h1 , h3 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    color: rgb(240, 245, 178);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    font-size: 2em;
+    font-family: 'big shoulders stencil display',sans-serif ;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#AboutMe {
+    background: rgba(255, 230, 0, 0.252);
+    border-radius: 25px;
+    width: 85%;
+    margin: 0px auto 3em;
+    padding: 15px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a:hover {
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+
+
+}
+
+.left {
+    flex: 1 0 100px;
+}
+
+.right {
+    flex: 4 2 auto;
+}
+
+.contain {
+    object-fit: cover;
+    height: 100px;
+    border-radius: 15px;
+}
+
+#Interests {
+    background: rgba(255, 230, 0, 0.252);
+    border-radius: 25px;
+    width: 85%;
+    margin: 0px auto 3em;
+    padding: 15px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#music {
+    background: rgba(255, 230, 0, 0.252);
+    border-radius: 25px;
+    width: 85%;
+    margin: 0px auto 3em;
+    padding: 15px;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table {
+    width: 100%;
+}
+
+table, td {
+    border: 2px solid gray;
+    border-collapse: collapse;
+}
+
+td {
+    padding-left: 1%;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 140, 255, .5);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(79, 172, 248, 0.25);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .75s ease;
+    background-color: darkcyan;
+}
+
+.img-container:hover .overlay {
+    opacity: .75;
+}
+
+.text {
+    color: white;
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#Contact {
+    background: rgba(22, 20, 1, 0.252);
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    color: white;
+}

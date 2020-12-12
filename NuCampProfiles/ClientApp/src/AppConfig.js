@@ -4,7 +4,7 @@ export const AppConfig = {
             name: "ONEA-2020-10-02",
             profiles: [
                 { id:"tyler", Name: 'Tyler Pennington', index: "https://telephonic.neocities.org/", external: true },
-                { id: "renee", Name: 'Renee Markiewicz', index: "renee/profile.html" },
+                { id: "renee", Name: 'Renee Markiewicz', index: "renee/profile.html", winner:true },
                 { id: "pete", Name: 'Pete McGarty', index: "pete/profile.html" }
             ]
         },

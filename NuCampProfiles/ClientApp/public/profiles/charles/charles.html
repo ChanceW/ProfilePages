@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <tile hidden>My Website in 12 Minutes</tile>
+    <style>
+        p {
+            font-size: 24px;
+        }
+    </style>
+
+</head>
+<body onload="runGame()">
+    <div id="container">
+        <div id="header">
+            <img id="logo" src="images/cslogoblue.jpg" alt="CS Logo" />
+            <h1>Charles Shepherd</h1>
+            <!--Linking to stylesheet code-->
+            <link rel="stylesheet" type="text/css" href="csprofile2.css" />
+        </div>
+            
+        <div id="content">
+            <div id="nav">
+                <a href="#aboutMe">About Me</a> | <a href="#interests">My Interests</a> | <a href="#mysites">My Websites</a> | <a href="#contact">Contact Me</a>
+            </div>
+            <div id="mainimage">
+                <div id="charlespic"><img src="images/charlesheadphoto.jpg" alt = "Charles Shepherd photo" width="200"></div>
+                <h2 id="scriptureOfDay">Scripture of the Day</h2>
+                <p id="displayScripture"></p> <!--This displays scripture-->
+                <iframe id="youtube" width="600" height="400" src="https://www.youtube.com/embed/pzJoSqSiHDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="main">
+                <section id="aboutMe">
+                    <div id="listenbox">
+                    <h2 id="listen">Listen to Me Talk About Myself</h2>
+                    <audio id="audio" src="http://www.cs360studio.com/sounds/charlesprofilewelcome.mp3" controls loop> Your browser does not support HTML5. Here is <a href="mp3/Easyshortmusic.mp3">a link to the audio</a> instead.</audio>
+                    </div>
+                    <div id="charlespic2"><img src="images/heilerlogo.png" alt = "Book Logo photo" width="200"></div>
+                    <h2>About Me</h2>
+                    <ul>
+                        <li>Born in Oakland, CA</li>
+                        <li>I currently live in Sanford, Florida</li>
+                        <li>Self Published Author</li>
+                        <li>Product Photographer</li>
+                        <li>360 Photographer</li>
+                        <li>Multimedia Artist</li>
+                        <li>BA from San Jose State University CADRE Program</li>
+                    </ul>
+            
+                </section>
+            
+                <section id="interests">
+                    <div id="charlespic3"><img src="images/3dworld.jpg" alt = "Bird Picture" height="295"></div>
+                    <h2>Interests</h2>
+            
+                    <ul>
+                        <li>Hiking and biking</li>
+                        <li>Digital Painting</li>
+                        <li>Photography</li>
+                        <li>Drawing</li>
+                        <li>Writing</li>
+                        <li>Pickleball Player</li>
+                        <li>Disc Golf Player</li>
+                    </ul>
+            
+                </section>
+            
+                <section id="mysites">
+                    <h2>My Personal Sites</h2>
+            
+                    <ul>
+                        <li><a href="http://www.cs360studio.biz" target="blank">My Portfolio Site</a></li>
+                        <li><a href="http://www.zanytalk.com" target="blank">My Zanytalk Site</a></li>
+                        <li><a href="http://www.charlesshepherd.net" target="blank">My Book: Don't Let Me Die</a></li>
+                    </ul>
+            
+                    </video>
+            
+                </section>
+            
+                <section id="contact">
+                    <table>
+                        <tr>
+                    <td><img id="cslogoblack" src="images/cslogoblack.jpg" width="40"></td>
+                    <td><h2 id="contactme">Contact Me</h2></td>
+                        </tr>
+                    </table>
+                    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+                        <fieldset>
+                            <legend>Your Information</legend>
+                            <div>
+                                <label for="firstName">First Name:</label>
+                                <input type="text" id="firstName" name="firstName" required placeholder="Your First Name" />
+                            </div>
+                            <div>
+                                <label for="lastName">Last Name:</label>
+                                <input type="text" id="lastName" name="lastName" required placeholder="Your Last Name" />
+                            </div>
+                            <div>
+                                <label for="email">Your Email:</label>
+                                <input type="email" id="email" name="email" required placeholder="Your Email Address" />
+                            </div>
+                            <div>
+                                <label for="message">Message:</label>
+                                <br>
+                                <textarea name="message" required id="message" rows="5" cols="30">
+                                </textarea>
+                            </div>
+                        </fieldset>
+                        
+                        <input id="submit" type="submit" />
+                    
+                    </form>
+                    <table>
+                        <tr>
+                            <td><img id="phoneicon" src="images/phoneicon .jpg" width="40">
+                            <td><a id="tel" href="tel:5105998631">Give Me A Call</a></td>
+                        </tr>
+                    </table>
+            
+                </section>
+            </div>
+
+        </div> <!--End div for content-->
+
+        <div id="footer">
+            Copyright &copy; 2021 - Charles Shepherd
+        </div>
+
+    </div> <!--End div for container-->
+
+    <script>
+        const newText = document.createTextNode('');
+        const parentNode = document.getElementById('displayScripture');
+        parentNode.appendChild(newText);
+
+        let mytimer = setInterval(runGame, 5000); //Timer - shows new scripture text every 10 seconds
+        
+        function runGame() {
+            for (let i = 0; i < 10; i++) {
+                const roll = Math.floor(Math.random() * 6) + 1;
+                if (roll === 1) {
+                    Game();
+                    const newText = document.createTextNode('1 Corinthians 13:4 - Love is patient, love is kind. It does not envy, it does not boast, it is not proud.');
+                    const parentNode = document.getElementById('displayScripture');
+                    parentNode.appendChild(newText);
+                    break;
+                }
+                if (roll === 2) {
+                    Game();
+                    const newText = document.createTextNode('Luke 6:31 - Do to others as you would have them do to you.');
+                    const parentNode = document.getElementById('displayScripture');
+                    parentNode.appendChild(newText);
+                    break;
+                }
+                if (roll === 3) {
+                    Game();
+                    const newText = document.createTextNode('Romans 12:9 - Love must be sincere. Hate what is evil; cling to what is good.');
+                    const parentNode = document.getElementById('displayScripture');
+                    parentNode.appendChild(newText);
+                    break;
+                }
+                if (roll === 4) {
+                    Game();
+                    const newText = document.createTextNode('1 Thessalonians 4:14 - For we believe that Jesus died and rose again, and so we believe that God will bring with Jesus those who have fallen asleep in him.');
+                    const parentNode = document.getElementById('displayScripture');
+                    parentNode.appendChild(newText);
+                    break;
+                }
+                if (roll === 5) {
+                    Game();
+                    const newText = document.createTextNode('Matthew 22:37 - Jesus replied: “‘Love the Lord your God with all your heart and with all your soul and with all your mind.');
+                    const parentNode = document.getElementById('displayScripture');
+                    parentNode.appendChild(newText);
+                    break;
+                }
+                if (roll === 6) {
+                    Game();
+                    const newText = document.createTextNode('1 Corinthians 1:19 - No temptation has overtaken you except what is common to mankind. And God is faithful; he will not let you be tempted beyond what you can bear. But when you are tempted, he will also provide a way out so that you can endure it.');
+                    const parentNode = document.getElementById('displayScripture');
+                    parentNode.appendChild(newText);
+                    break;
+                }
+            }
+        }
+          
+        function Game() {
+          var select = document.getElementById('displayScripture');
+          select.removeChild(select.lastChild);
+        }
+        
+          
+        </script>
+
+</body>
+
+</html>

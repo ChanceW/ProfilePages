@@ -1,0 +1,161 @@
+body {
+    background-color: #26519f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none; /*Comment- This removes the underline hyperlink*/
+    color: blue
+}
+
+h1 {
+    margin: 0px;
+    padding: 15px;
+}
+
+p {
+    color: white;
+    padding-right: 20px;
+}
+
+#scriptureOfDay {
+    padding-left: 187px;
+}
+
+#container {
+    background-color:black; 
+    width: 800px; /*Comment- This sets the container to 800 pixels wide*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: #26519f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 780px;
+}
+
+#logo { 
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    }
+
+#content {
+    padding: 10px;
+    color: white;
+}
+
+#nav {
+    margin: auto;
+    width: 500px;
+    height: 10px;
+    font-size: 20px;
+    background-color:black;   
+}
+
+#nav ul {
+    list-style-type: none; /*Comment- This removes the bullet points*/
+    padding: 0px; /*Comment- This removes padding on the left of nav*/
+}
+
+nav.selected {
+    font-weight: bold;
+}
+
+#main {
+    width: 600px;
+    margin: auto;
+}
+
+#footer {
+    clear: both; /*Comment- This helps get past any floating elements*/
+    padding: 10px;
+    background-color:#26519f;
+    color: white;
+    text-align: center;
+}
+
+#mainimage {
+    margin-left: 85px;
+    margin-top: 40px;
+}
+
+#charlespic {
+    margin-left: 195px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+#charlespic2 {
+    margin-left: 195px;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+#charlespic3 {
+    border: dotted orange;
+}
+
+#audio {
+    margin-left: 10px;
+}
+
+#contact {
+    border: dotted orange;
+    padding: 10px;
+}
+
+#listen {
+    border: dotted orange;
+    padding: 5px;
+    text-align: center;
+}
+
+#listenbox {
+    border: dotted orange;
+    padding: 10px;
+    text-align: center;
+}
+
+#phoneicon {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#tel {
+    border: dotted orange;
+    padding: 10px;
+}
+
+#contactme {
+    color: orange;
+}
+
+#youtube {
+    border: solid orange;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+
+label:hover {
+    color: blue;
+}
+
+#submit {
+    background: blueviolet;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+a:hover {
+    color: orange; /*Comment- This is rollover color for main nav at top of page*/
+}

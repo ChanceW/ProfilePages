@@ -1,6 +1,12 @@
 export const AppConfig = {
     classes: [
         {
+            name: "ONEA-2021-01-01",
+            profiles: [
+                { id: "charles", Name: 'Charles Shepherd', index: "charles/charles.html" }
+            ]
+        },
+        {
             name: "ONEA-2020-10-02",
             profiles: [
                 { id:"tyler", Name: 'Tyler Pennington', index: "https://telephonic.neocities.org/", external: true },

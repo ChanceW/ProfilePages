@@ -12,7 +12,8 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <p>Congratulations HTML, CSS and JavaScript Graduates!</p>
+                <p>Congratulations NuCamp Students on You BootCamp Progress!</p>
+                <p>Time to Showcase Your Skills</p>
             </header>
             <div className="App-Body">
                 <Input className="classSelect" type="select" onChange={(e) => { setSelected(e.target.value) }}>{classes}</Input>

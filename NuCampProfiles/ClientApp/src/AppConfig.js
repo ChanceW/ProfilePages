@@ -1,6 +1,12 @@
 export const AppConfig = {
     classes: [
         {
+            name: "ONEA-2021-01-11-BOOTSTRAP",
+            profiles: [
+                { id: "tierra", Name: 'Tierra Rucker', index: "tierra/index.html" }
+            ]
+        },
+        {
             name: "ONEA-2021-01-01",
             profiles: [
                 { id: "charles", Name: 'Charles Shepherd', index: "charles/charles.html", winner: true },

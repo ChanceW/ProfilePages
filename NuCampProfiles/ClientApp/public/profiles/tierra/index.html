@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/02ea88b81a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Ecommerce Store</title>
+    </head>
+
+    <body>
+
+        <header> 
+            <div id="navDiv" class="container">
+                <!-- navbar -->
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">Logo</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="product.html">Cupcakes</a></li>
+                                <li><a class="dropdown-item" href="product.html">Cookies</a></li>
+                                <li><a class="dropdown-item" href="product.html">Donuts</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <i class="fas fa-shopping-cart"></i>
+                            <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button> -->
+                        </form> 
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>    
+
+        <main>
+            <!-- Carousel -->
+            <div class="container carousel-container">
+                <div class="row">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/pexels-acharaporn-kamornboonyarush-1028704.jpg" class="d-block w-100" width="300px" height="500px" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h5>Cupcakes</h5>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/pexels-arminas-raudys-808941.jpg" class="d-block w-100" width="300px" height="500px" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h5>Cookies</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/pexels-maurício-mascaro-4801057.jpg" class="d-block w-100" width="300px" height="500px" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h5>Donuts</h5>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div>
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!-- products -->
+            <div id="hero" class="container">
+                <div class="row row-one text-center">
+                    <div class="col-md-4">
+                        <a href="product.html"><img class="img-fluid" src="img/pexels-julias-torten-und-törtchen-1120464.jpg" alt="..."/></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="product.html"><img class="img-fluid" src="img/pexels-lukas-306070.jpg"/></a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="product.html"><img class="img-fluid" src="img/pexels-neosiam-585581.jpg" alt="..."/></a>
+                    </div>
+                </div> 
+                <div class="row row-two text-center">
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/pexels-roman-odintsov-5846039.jpg" alt="..."/>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/pexels-alexandr-podvalny-6608722.jpg" alt="..."/>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid" src="img/pexels-jill-wellington-3309805.jpg" alt="..."/>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div> -->
+            </div>
+        </main>
+       
+        <hr/>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="aboutus.html">About</a></li>
+                                <li><a href="contactus.html">Contact</a></li>
+                            </ul>
+                    </div>
+                    <div class="col-6 col-sm-5 text-center">
+                        <h5>Social</h5>
+                            <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-888-555-1234</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:desserts@fakeemail.com"><i class="fa fa-envelope-o"></i> desserts@fakeemail.com</a>
+                    </div>
+               </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+        <script src="script.js">
+            // nothing to add??? 
+        </script>
+    </body>
+</html>

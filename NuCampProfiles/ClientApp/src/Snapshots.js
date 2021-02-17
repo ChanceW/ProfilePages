@@ -4,6 +4,7 @@ import renee from './snapshots/renee.PNG';
 import tyler from './snapshots/tyler.PNG';
 import pete from './snapshots/pete.PNG';
 import charles from './snapshots/charles.PNG';
+import derrick from './snapshots/derrick.PNG';
 
 export const Snapshots = {
     greg: greg,
@@ -11,5 +12,6 @@ export const Snapshots = {
     renee: renee,
     tyler: tyler,
     pete: pete,
-    charles: charles
+    charles: charles,
+    derrick: derrick
 };

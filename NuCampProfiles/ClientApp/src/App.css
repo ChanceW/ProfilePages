@@ -10,7 +10,7 @@
 }
 
 .App-logo {
-    height: 20vmin;
+    height: 10vmin;
     pointer-events: none;
     margin-bottom: 30px;
 }
@@ -22,17 +22,23 @@
 }
 
 .App-header {
-    background-image: linear-gradient(45deg, var(--nucamp_Puple), var(--nucamp_Gray), var(--nucamp_Gray),var(--nucamp_Gray), var(--nucamp_Blue));
-    padding-top: 2%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
+    background-image: linear-gradient(45deg, var(--nucamp_Gray) 40%, var(--nucamp_Puple), var(--nucamp_Blue));
     color: white;
+}
+
+footer {
+    background-image: linear-gradient(var(--nucamp_Blue), white);
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+    z-index: 2;
 }
 
 .App-Body {
     margin-top: 25px;
+    padding-bottom: 80px;
 }
 
 .App-Body select{
@@ -80,7 +86,7 @@
 }
 
 .card .trophy {
-    width: 10%;
+    width: 8%;
     position: absolute;
     top: 5px;
     left: 5px;

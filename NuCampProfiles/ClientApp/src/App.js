@@ -1,4 +1,4 @@
-import logo from './nl.PNG';
+import logo from './nl2.png';
 import './App.css';
 import React, { useState } from 'react';
 import { Input } from 'reactstrap';

@@ -3,8 +3,9 @@ export const AppConfig = {
         {
             name: "ONEA-2021-01-11-BOOTSTRAP",
             profiles: [
-                { id: "tierra", Name: 'Tierra Rucker', index: "tierra/index.html" }
-            ]
+                { id: "tierra", Name: 'Tierra Rucker', index: "tierra/index.html", winner: true }
+            ],
+            comment: "Tierra -Amazing colors."
         },
         {
             name: "ONEA-2021-01-01",
